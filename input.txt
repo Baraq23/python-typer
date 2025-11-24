@@ -1,0 +1,1 @@
+Welcome to Typer! This is an automated typing tool that reads from input.txt and types the text character by character with a 500ms delay between each keystroke. Edit this file with any text you want to type.
