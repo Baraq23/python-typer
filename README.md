@@ -1,13 +1,15 @@
 # Typer
 
-A simple Python script that types text from a file character by character with a 500ms delay between each keystroke.
+A simple Python automation tool that reads text from a file and types it into any focused window with a 500ms delay between each keystroke.
 
 ## Features
 
 - Reads text from `input.txt` file
-- Types text to the currently focused window
-- 500ms delay between each keystroke for slow/deliberate typing
-- 5-second initial delay to allow switching to target window
+- Types text to the currently focused window character by character
+- Configurable 500ms delay between each keystroke
+- 5-second initial delay before typing begins (time to switch to target window)
+- Easy automation with Makefile commands
+- Works with X11 display systems
 
 ## Requirements
 
