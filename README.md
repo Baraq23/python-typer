@@ -1,6 +1,6 @@
 # Typer
 
-A simple Python automation tool that reads text from a file and types it into any focused window with a 500ms delay between each keystroke.
+A simple Python automation tool that reads text from a file and types it into any focused window with a 50ms delay between each keystroke.
 
 ## Features
 
