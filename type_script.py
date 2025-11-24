@@ -2,13 +2,13 @@
 import time
 import pyautogui
 
-def type_string(text, delay=0.5):
+def type_string(text, delay=0.005):
     """
     Types a string character by character with a delay between each keystroke.
     
     Args:
         text: The string to type
-        delay: Delay in seconds between keystrokes (default: 0.5 seconds)
+        delay: Delay in seconds between keystrokes (default: 0.005 seconds)
     """
     time.sleep(5)  # Initial 5-second delay to switch to target window before typing starts
     
