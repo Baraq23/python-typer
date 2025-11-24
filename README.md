@@ -22,50 +22,43 @@ A simple Python script that types text from a file character by character with a
 sudo apt-get install python3-tk python3-dev
 ```
 
-2. Create and activate virtual environment:
+2. Install project dependencies using Makefile:
+```bash
+make install
+```
+
+**Or manually:**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-```
-
-3. Install Python dependencies:
-```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
 
 1. Create or edit `input.txt` with the text you want to type
-2. Run the script:
+2. Run the script using Makefile:
 ```bash
+make run
+```
+
+**Or manually:**
+```bash
+source venv/bin/activate
 python3 type_script.py
 ```
+
 3. Quickly click on the window/field where you want text typed (you have 5 seconds)
 
-## Wayland/Display Permissions
+## Makefile Commands
 
-If using Wayland or experiencing display/input permission issues:
-
-1. Ensure X11 access is allowed:
-```bash
-xhost +local:
-```
-
-2. Set DISPLAY variable if needed:
-```bash
-export DISPLAY=:0
-python3 type_script.py
-```
-
-3. For Wayland systems, you may need to run the script with proper permissions or switch to X11 session temporarily.
+- `make install` - Install dependencies and set up virtual environment
+- `make run` - Run the typing script (automatically handles X11 permissions)
+- `make clean` - Remove virtual environment
+- `make venv` - Create virtual environment only
+- `make help` - Show available commands
 
 ## Troubleshooting
-
-If you get `DisplayConnectionError`, run:
-```bash
-xhost +local:
-python3 type_script.py
-```
 
 If `pyautogui` module is not found when using `sudo`, use the venv's Python:
 ```bash
